@@ -43,7 +43,8 @@
 .container h1{
     position: relative;
     font-size: 80px;
-    color: rgb(57, 159, 74);
+    color: #FBCA2B;
+    /* color: rgb(57, 159, 74); */
     font-weight: 800;
     text-shadow: 2px 2px #fff;
     text-align: center;
