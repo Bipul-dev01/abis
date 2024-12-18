@@ -204,7 +204,7 @@ html, body {
 }
 .nav-links{
     list-style: none;
-    padding-bottom: 8px;
+    padding-bottom: 18px;
 }
 .nav-links > .nav-link-item{
     display: inline-block;
