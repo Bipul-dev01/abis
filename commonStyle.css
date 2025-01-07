@@ -195,7 +195,7 @@ html, body {
     padding-right: 15px;
 }
 .nav-logo h2{
-    font-size: 2.3em;
+    font-size: 2.5em;
     font-weight: 700;
     color: #2d57d9;
 }
@@ -455,6 +455,26 @@ html, body {
     .hero-container{
         padding: 20px 35px;
     }
+
+    /* Home Section Moving Text */
+  .moving{
+    min-height: 10vh;
+    margin-top: -100px;
+    width: 100%;
+  }
+  .moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .moving-text h1{
+    font-size: 5vw;
+    padding-top: 20PX;
+  }
+  #gola{
+    height: 15px;
+    width: 15px;
+    margin: 0 1vw;
+  }
 }
 
 /* ***************************************************    
