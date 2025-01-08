@@ -77,37 +77,6 @@ loaderAnimation()
 ***************************************************  */
 
 /* ***************************************************    
-     GSAP Image Slider JS Start
-***************************************************  */   
-var tl = gsap.timeline({
-    // repeat:10
-    repeat:-1
-});
-
-tl.to(".imagecontainer",{
-    ease: Expo.easeInOut,
-    width:"100%",
-    duration:2,
-    stagger:3
-},"a")
-
-.to(".text h1",{
-    ease: Expo.easeInOut,
-    stagger:3,
-    top:0
-},"a")
-
-.to(".text h1",{
-    delay:3,
-    ease: Expo.easeInOut,
-    stagger:3,
-    top:"-100%"
-},"a")
-/* ***************************************************    
-     GSAP Image Slider JS End
-***************************************************  */  
-
-/* ***************************************************    
      Scroll up Button JS Start
 ***************************************************  */   
 

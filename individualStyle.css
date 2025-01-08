@@ -106,49 +106,233 @@ section{
   .custom-shape-divider-bottom-1684324473 .shape-fill {
     fill: #e9768f;
   }
+  @media (max-width:460px){
+    .home{
+      margin-bottom: -2px;
+    }
+    .home .content h3{
+      font-size: 4rem;
+    }
+  }
   
 /* ********************************************************
     Home section End
 ********************************************************  */
- 
 /* ********************************************************
     About us Start
 ********************************************************  */
   
-  .about{
-    background: #e9768f;
-  } 
-  .about .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .about .row .image{
-    flex: 1 1 50rem;
-  }
-  .about .row .image img{
-    width: 100%;
-    height: 100%;
-  }
-  .about .row .content{
-    flex: 1 1 30rem;
-  }
+.about{
+  background: #e9768f;
+} 
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about .row .image{
+  flex: 1 1 50rem;
+}
+.about .row .image img{
+  width: 100%;
+  height: 100%;
+}
+.about .row .content{
+  flex: 1 1 30rem;
+}
+.about .row .content h3{
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.about .row .content p{
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: justify;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+@media (max-width:460px){
   .about .row .content h3{
-    font-size: 3.5rem;
-    color: #fff;
+    font-size: 2.8rem;
     line-height: 1.5;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-  .about .row .content p{
-    font-size: 1.5rem;
-    color: #fff;
-    text-align: justify;
-    padding: 1rem 0;
-    line-height: 1.8;
-  }
+}
 /* ********************************************************
-     About us CSS End
+   About us CSS End
 ********************************************************  */ 
+
+ /* *********************************************************  
+    Our Portfolio Image Slider Styling Start
+********************************************************* */
+.headingText h1{
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgb(174, 13, 171);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1px;
+  text-shadow: 1px 1px #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.headingText h2{
+font-size: 20px;
+font-weight: 400;
+color: rgb(20, 19, 20);
+text-align: center;
+text-shadow: 1px 1px #000;
+}
+.portfolioImageSlider{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: -80px;
+}
+.portfolioImageSlider .portfolioHeadingImage img{
+  width: 320px;
+  height: 75px;
+  margin-bottom: -50px;
+}
+
+.slider{
+  /* height: 250px; */
+  height: 500px;
+  margin: auto;
+  position: relative;
+  width: 95%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slider-track{
+  display: flex;
+  /* width: calc(250px*18); */
+  width: calc(500px*18);
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    /* transform: translate(calc(-250px*9)); */
+    transform: translate(calc(-500px*9));
+  }
+}
+.slide{
+  /* width: 250px;
+  height: 220px; */
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 15px; */
+  padding: 20px;
+  perspective: 100px;
+}
+.slide img{
+  /* width: 100%; */
+  width: 400px;
+  height: 300px;
+  /* padding: 10px; */
+  padding-bottom: 10px;
+  transition: transform 1s;
+  /* filter: drop-shadow(10px 10px 20px black); */
+}
+.slide a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 10px;
+  background: #0b9e99;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+.slide a:hover{
+  background: #a622d6;
+  transition: all 0.3s ease;
+}
+.slide img:hover{
+  transform: translateZ(20px);
+}
+.slider::before,
+.slider::after{
+  background:linear-gradient(to right, rgb(231, 150, 230) 10%, rgba(187, 27, 209, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+@media screen and (max-width: 480px){
+  .headingText h1{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.headingText h2{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+/* Home Section Our Portfolio Image Slider */
+.portfolioImageSlider{
+  min-height: 60vh;
+
+}
+.portfolioImageSlider .portfolioHeadingImage img{
+  width: auto;
+  height: auto;
+  margin-bottom: -50px;
+}
+.portfolioImageSlider h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px #000;
+}
+.slider{
+  height: 350px;
+  width: 100%;
+}
+.slider-track{
+  width: calc(450px*18);
+}
+.slide{
+  width: 450px;
+  height: 360px;
+  padding: 2px;
+  perspective: 100px;
+}
+.slide img{
+  width: 350px;
+  height: 260px;
+  padding-bottom: 6px;
+}
+.slider::before,
+.slider::after{
+  width: 5%;
+}
+}
+/* *********************************************************  
+    Our Portfolio Image Slider Styling End
+********************************************************* */
 
 /* **********************************************************
     Home Features section CSS Start
@@ -238,102 +422,47 @@ section{
   transition: 0s;
   background:rgba(0, 0, 0, 1);
 }
+@media(max-width:460px){
+  .listFeature{
+    min-height: 100vh;
+  }
+  .listFeature h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .listFeature ul{
+    /* background: #fff; */
+    padding: 5px 0px;
+  }
+  .listFeature ul li{
+    padding: 8px 4px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 1.2;
+  }
+  .listFeature ul li ion-icon {
+    color: #d91fab; /* Ensure consistent color */
+    font-size: 15px; /* Adjust size to be visible */
+    padding: 5px; /* Consistent padding */
+    margin-right: 10px; /* Spacing from text */
+    background-color: #e7e0e0;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 17px; /* Fix shrinking by setting a minimum width */
+    min-height: 17px; /* Fix shrinking by setting a minimum height */
+  }
+  .listFeature ul li span {
+    display: flex;
+    vertical-align: middle; 
+  }
+}
 /* **********************************************************
     Home Features section CSS End
 ********************************************************** */
-/* ********************************************************
-     GSAP Image Slider CSS Start
-********************************************************  */ 
-
-.gsapimageSlider{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-#mainSlider{
-  position: relative;
-  width: 100%;
-  height: 100%; 
-  /* background-color: #dadada; */
-  background-image: url("images/homePage/backImage1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; 
-}
-#mainSlider #center{
-  position: absolute;
-  left: 17%;
-  top: 50%;
-  transform: translate(0%,-50% );
-  width: 70%;
-  height: 80%;
-  z-index: 2;
-}
-#mainSlider .imagecontainer{
-  overflow: hidden;
-  position: absolute;
-  width: 0%;
-  height: 100%;
-}
-#mainSlider .imagecontainer img{
-  width: 900px;
-  height: 115%; 
-}
-#one{
-  width: 0%;
-}
-#mainSlider #center .text{
-  position: absolute;
-  bottom: 15%;
-  left: -15%;
-  overflow: hidden;
-  width: 600px;
-  height: 100px;
-  z-index: 999;
-}
-#mainSlider #center .text h1{
-  top: 100px;
-  font-size: 4vw;
-  text-shadow: 1px 1px 1px #fff;
-  position: absolute;
-  color: blueviolet;
-}  
-@media(max-width:460px){
-  .gsapimageSlider{
-    position: relative;
-    width: 100%;
-    height: 40vh;
-  }
-  #mainSlider #center{
-    position: absolute;
-    left: 17%;
-    top: 50%;
-    transform: translate(0%,-50% );
-    width: 80%;
-    height: 80%;
-    z-index: 2;
-  }
-  #mainSlider .imagecontainer{
-    overflow: hidden;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-  }
-  #mainSlider .imagecontainer img{
-    width: 100%;
-    height: 80%; 
-  }
-  #mainSlider #center .text{
-    bottom: 10%;
-    left: -5%;
-    overflow: hidden;
-    width: 250px;
-    height: 100px;
-  }
-}
-/* ********************************************************
-     GSAP Image Slider CSS End
-********************************************************  */ 
 
 /* ********************************************************
      Gallery CSS Start
@@ -442,8 +571,33 @@ section{
     transform: translateX(-100%);
   }
 }
+
+@media(max-width:460px){
+    /* Home Section Moving Text */
+  .moving{
+    min-height: 10vh;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .con{
+    animation-duration: 20s;
+  }
+  .moving-text h1{
+    font-size: 5vw;
+    padding-top: 20PX;
+  }
+  #gola{
+    height: 15px;
+    width: 15px;
+    margin: 0 1vw;
+  }
+}
 /* **********************************************************
-    Moving Text Styling Start
+    Moving Text Styling End
 ********************************************************** */
 
 
@@ -467,8 +621,17 @@ section{
   text-shadow: 2px 2px #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  
+  transform: translate(-50%, -50%);  
+}
+@media (max-width:460px){
+  .playground{
+    margin-top: 50px;
+    height: 400px;
+  }
+  .playground h1{
+    font-size: 25px;
+    text-shadow: 2px 1px #fff;  
+  }
 }
 /* **********************************************************
     Playground Backgroud attatchment CSS End
@@ -616,123 +779,37 @@ section{
 .section__card:hover img {
   border-color: var(--white);
 }
+@media(max-width:460px){
+  .section__container {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .section__container h2 {
+    font-size: 2.5rem;
+  }
+  .section__container h1 {
+    margin-bottom: 2.5rem;
+    font-size: 2.3rem;
+  }
+  .section__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .section__card {
+    padding: 5rem 2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+}
 /* ********************************************************
     Testimonial CSS End
 ******************************************************** */
-
-/* ***************************************************    
-    Footer Upper Part CSS Contact Start
-*************************************************** */
-.lines-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Aligns the lines at the bottom */
-  height: 150px; /* Adjust the container height */
-  gap: 4px; /* Space between lines */ 
-}
-.line {
-  width: 1px;
-  background-color: #fff;
-}
-.small {
-  height: 90px; /* Shorter lines */
-}
-.tall {
-  height: 130px; /* Taller middle line */
-  margin-top: -20px; /* Increase height equally on top */
-  margin-bottom: -20px; /* Increase height equally on bottom */
-}
-
-.footerUpperPartContact{
-  position: relative;
-  width: 70%;
-  height: 200px;
-  background-color: #052E59;
-  z-index: 2;
-  margin-bottom: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 18px;
-  box-shadow: rgba(35, 35, 35, 0.35) 0px 5px 15px;
-}
-.partContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.partContainer .part1{
-  display: flex;
-  justify-content: space-between;
-  width: 33%; 
-}
-.partContainer .part2{
-  display: flex;
-  justify-content: space-between;
-  width: 33%;
-}
-.partContainer .part3{
-  width: 33%;
-}
-.part1 .part,
-.part2 .part{
-  width: 100%;
-}
-.part{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: #fff;
-}
-.part i{
-  font-size: 22px;
-  color: #f9ba60;
-  margin-top: 8px;
-  margin-bottom: 5px;
-}
-.part h2{
-  font-size: 20px;
-  padding: 8px;
-  font-weight: 500;
-}
-.part1 .part a{
-  text-decoration: none;
-  cursor: pointer;
-}
-.part1 .part a h2{
-  font-size: 20px;
-  color: #fff;
-  padding: 8px;
-  font-weight: 500;
-}
-.part1 p{
-  padding: 0 10px;
-  font-size: 15px;
-  color: #fff;
-}
-.part2 .part i{
-  margin-top: 18px;
-}
-.part2 a{
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 2px;
-}
-.part3 .part i{
-  margin-top: -3px;
-}
-.part3 .part a{
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-/* ***************************************************    
-    Footer Upper Part CSS Contact End
-*************************************************** */
 
 /* ***************************************************    
     Footer Upper Part CSS Start
@@ -773,6 +850,23 @@ section{
   left: 50%;
   transform: translate(-50%, -50%); 
 }
+
+@media (max-width:460px){
+  .contactUpperPart{
+    margin-top: 30px;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    margin-bottom: 30px;
+  }
+  .contactUpperPart h1{
+    font-size: 35px;
+    font-weight: 300;
+    text-shadow: 2px 1px #fff;
+  }
+}
+
 /* **********************************************************
     Upper Part Contact CSS End
 ********************************************************** */
@@ -800,6 +894,30 @@ section{
 }
 .contactPage .row .map{
   /* width: 750px; */
+}
+@media (max-width:460px){
+  .contactPage{
+    padding: 30px 10px;
+    margin-bottom: 100px;
+  }
+  .contactPage .row .image{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactPage .row .image img{
+    position: relative;
+    left: 15%;
+  }
+  .contactPage .row .map{
+    width: 500px !important;
+  }
+  .contactPage .row .map iframe {
+    width: 100%; 
+    height: 500px; 
+  }
 }
 /* **********************************************************
     Contact Us Page Map CSS End

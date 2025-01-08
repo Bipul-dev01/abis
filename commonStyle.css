@@ -12,11 +12,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
-/* 
-
-html, body {
-    height: 100%; 
-} */
 
 /* ***************************************************    
     Preloader style Start
@@ -446,6 +441,10 @@ html, body {
     .nav-container {
         padding: 0 45px !important;
     }
+    .nav-logo h2{
+        font-size: 1em;
+        font-weight: 600;
+    }
     .nav-container > .nav-links-container {
         right: -400px; /* Initially hidden */
         width: 300px;
@@ -480,7 +479,153 @@ html, body {
 /* ***************************************************    
     Navbar style End
 ***************************************************  */
-
+/* ***************************************************    
+    Footer Upper Part CSS Contact Start
+*************************************************** */
+.lines-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligns the lines at the bottom */
+    height: 150px; /* Adjust the container height */
+    gap: 4px; /* Space between lines */ 
+  }
+  .line {
+    width: 1px;
+    background-color: #fff;
+  }
+  .small {
+    height: 90px; /* Shorter lines */
+  }
+  .tall {
+    height: 130px; /* Taller middle line */
+    margin-top: -20px; /* Increase height equally on top */
+    margin-bottom: -20px; /* Increase height equally on bottom */
+  }
+  
+  .footerUpperPartContact{
+    position: relative;
+    width: 70%;
+    height: 200px;
+    background-color: #052E59;
+    z-index: 2;
+    margin-bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 18px;
+    box-shadow: rgba(35, 35, 35, 0.35) 0px 5px 15px;
+  }
+  .partContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .partContainer .part1{
+    display: flex;
+    justify-content: space-between;
+    width: 33%; 
+  }
+  .partContainer .part2{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+  }
+  .partContainer .part3{
+    width: 33%;
+  }
+  .part1 .part,
+  .part2 .part{
+    width: 100%;
+  }
+  .part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+  }
+  .part i{
+    font-size: 22px;
+    color: #f9ba60;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  .part h2{
+    font-size: 20px;
+    padding: 8px;
+    font-weight: 500;
+  }
+  .part1 .part a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .part1 .part a h2{
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+    font-weight: 500;
+  }
+  .part1 p{
+    padding: 0 10px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .part2 .part i{
+    margin-top: 18px;
+  }
+  .part2 a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  .part3 .part i{
+    margin-top: -3px;
+  }
+  .part3 .part a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  @media (max-width:460px){
+    .footerUpperPartContact{
+      width: 85%;
+      height: 580px;
+      margin-bottom: -100px;
+      left: 50%;
+    }
+    .lines-container {
+      visibility: hidden;
+    }
+    .partContainer{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .partContainer .part1{
+      display: flex;
+      justify-content: space-between;
+      width: 100%; 
+      margin-top: 80px;
+      padding-top: 30px;
+    }
+    .partContainer .part2{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 30px;
+    }
+    .partContainer .part3{
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  /* ***************************************************    
+      Footer Upper Part CSS Contact End
+  *************************************************** */
 /* ***************************************************    
     Footer style Start
 ***************************************************  */
