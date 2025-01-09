@@ -130,9 +130,9 @@ html{
     }
     
     #loading ul li{
-        font-size: 2.5em;
-        color: #f36382;
-        font-weight: bold;
+        font-size: 2.6em;
+        color: #d22c50;
+        font-weight: 600;
         text-shadow: 5px 5px 10px #fff;
         transform-origin: left;
         animation: animateLoading 3s infinite ease-in-out; /* Added easing for smoother transitions */
@@ -145,10 +145,10 @@ html{
     }
     #loading .schoolName h2{
         font-family: arial;
-        color: #f3eb06;
-        font-weight: bold;
-        text-shadow: 5px 5px 10px #dc50dc;
-        font-size: 2em;
+        color: #0610d7;
+        font-weight: 600;
+        text-shadow: 5px 5px 10px #f9f8f9;
+        font-size: 2.6em;
         text-align: center;
     }
 }
@@ -305,7 +305,6 @@ html{
     text-align: justify;
 }
 
-
 @media(max-width:992px){
     body {
         max-width: 992px; /* Keep this for layout purposes */
@@ -411,7 +410,7 @@ html{
         transform: translateY(0px);
     }
     .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item a{
-        color: #ffffff21;
+        color: #cac6c6d4;
         border: none;
     }
     .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item a:hover{
@@ -442,7 +441,7 @@ html{
         padding: 0 45px !important;
     }
     .nav-logo h2{
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 600;
     }
     .nav-container > .nav-links-container {
