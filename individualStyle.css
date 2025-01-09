@@ -307,6 +307,11 @@ text-shadow: 1px 1px #000;
     margin-bottom: 5px;
     text-shadow: 1px 1px #000;
 }
+.slider::before,
+.slider::after{
+  height: 80%;
+  top: 35px;
+}
 .slider{
   height: 350px;
   width: 100%;
