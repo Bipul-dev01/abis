@@ -162,7 +162,8 @@ html{
 .nav-container {
     position: sticky; /* Keep it sticky */
     top: 0; /* Top alignment */
-    z-index: 1000; /* Ensure it stays above content */
+    z-index: 1500;
+    /* z-index: 1000;  */
     background-color: #fff; /* Maintain the navbar background */
     width: 100%;
     height: 80px;
@@ -317,7 +318,7 @@ html{
     .nav-container {
         position: sticky; /* Ensures the navbar remains sticky */
         top: 0; /* Keeps the navbar at the top */
-        z-index: 1000; /* Keeps the navbar above other content */
+        z-index: 1500; /* Keeps the navbar above other content */
         padding: 0 1rem; /* Adjust padding for small screens */
         padding-right: 140px !important;
     }
@@ -438,7 +439,7 @@ html{
 }
 @media(max-width:460px){
     .nav-container {
-        padding: 0 45px !important;
+        padding: 0 30px !important;
     }
     .nav-logo h2{
         font-size: 1.2em;
