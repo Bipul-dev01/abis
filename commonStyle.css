@@ -831,8 +831,9 @@ footer .wave#wave4{
     /* padding: 22px 100px; */
     padding-top: 25px;
     padding-left: 100px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #fff;
+    text-transform: none;
     font-size: 16px;
     text-align: justify;
 }
