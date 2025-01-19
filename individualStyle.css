@@ -660,7 +660,7 @@ text-shadow: 1px 1px #000;
   padding: 2rem 1rem;
   text-align: center;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .section__container h2 {
@@ -792,7 +792,7 @@ text-shadow: 1px 1px #000;
     padding: 2rem 1rem;
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 120px;
+    margin-bottom: 30px;
   }
   .section__container h2 {
     font-size: 2.5rem;

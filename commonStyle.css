@@ -962,3 +962,61 @@ footer .wave#wave4{
 /* ******************************************************
     Message Wrapper Part Style End
 ******************************************************  */
+/* ********************************************************
+    ABIS logo name animation Style Start
+********************************************************  */
+.abisLogoName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;  
+}
+.abisLogoName img{
+    width: 185px;
+    height: 175px;
+    padding-right: 35px;
+}
+.abisLogoName h1{
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    padding-left: 35px;
+    background-size: 300%;
+    color: transparent;
+    background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+    -webkit-background-clip: text;
+    animation: animateText 20s linear infinite;
+    
+}
+@keyframes animateText {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+@media (max-width:460px){
+    .abisLogoName{
+        margin-bottom: 10px;  
+    }
+    .abisLogoName img{
+        width: 85px;
+        height: 75px;
+        padding-right: 20px;
+    }
+    .abisLogoName h1{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        padding-left: 20px;
+        background-size: 300%;
+    }
+}
+/* ********************************************************
+    ABIS logo name animation Style End
+********************************************************  */
