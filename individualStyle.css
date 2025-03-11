@@ -819,6 +819,300 @@ text-shadow: 1px 1px #000;
     Testimonial CSS End
 ******************************************************** */
 
+/* ********************************************************
+    Vision & Objectives CSS Start
+******************************************************** */
+.container-objectives{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+.container-objectives h2 {
+  color: #333;
+  font-size: 25px;
+  padding-top: 35px;
+}
+.container-objectives p{
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: justify;
+}
+.container-objectives ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.container-objectives li {
+  margin-bottom: 18px;
+  font-size: 14px;
+} 
+/* ********************************************************
+    Vision & Objectives CSS End
+******************************************************** */
+
+/* **********************************************************    
+    Why study at AHS & Annual Events Celebrations CSS Start
+**********************************************************  */
+
+.whyStudyAt {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.whyStudyAt h1{
+  font-size: 40px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+.whyStudyAt .content h2{
+  font-size: 18px;
+} 
+.whyStudyAt .section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.whyStudyAt .section img {
+  width: 40%;
+  border-radius: 10px;
+}
+.whyStudyAt .section .content {
+  width: 55%;
+  padding: 10px;
+}
+.whyStudyAt .section:nth-of-type(1) .content,
+.whyStudyAt .section:nth-of-type(3) .content,
+.whyStudyAt .section:nth-of-type(5) .content{
+   padding-left: 60px;
+   text-align: justify;
+}
+.whyStudyAt .section:nth-of-type(2) .content,
+.whyStudyAt .section:nth-of-type(4) .content,
+.whyStudyAt .section:nth-of-type(6) .content{
+   padding-right: 60px;
+   text-align: justify;
+}
+.whyStudyAt .section .content p{
+  font-size: 14px;
+  padding-top: 15px;
+}
+.whyStudyAt .section:nth-of-type(1) img,
+.whyStudyAt .section:nth-of-type(3) img {
+  order: -1;
+}
+@media (max-width:460px){
+  .whyStudyAt {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  .whyStudyAt h1{
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .whyStudyAt .section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .whyStudyAt .section img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .whyStudyAt .section .content {
+    width: 100%;
+    padding: 10px;
+  }
+  .whyStudyAt .section:nth-of-type(1) .content,
+  .whyStudyAt .section:nth-of-type(3) .content,
+  .whyStudyAt .section:nth-of-type(5) .content{
+    padding-left: 0px;
+  }
+  .whyStudyAt .section:nth-of-type(2) .content,
+  .whyStudyAt .section:nth-of-type(4) .content,
+  .whyStudyAt .section:nth-of-type(6) .content{
+    padding-right: 0px;
+  }
+  .whyStudyAt .section:nth-of-type(1) img,
+  .whyStudyAt .section:nth-of-type(2) img,
+  .whyStudyAt .section:nth-of-type(3) img,
+  .whyStudyAt .section:nth-of-type(4) img,
+  .whyStudyAt .section:nth-of-type(5) img,
+  .whyStudyAt .section:nth-of-type(6) img {
+    order: 1;
+  }
+}
+
+/* **********************************************************    
+    Why study at AHS & Annual Events Celebrations CSS End
+**********************************************************  */
+
+/* ********************************************************
+    Co-curricular activities CSS Start
+******************************************************** */
+.co-curricularActivities{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+} 
+.co-curricularActivities h1 {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  margin-top: -13px;
+}
+
+.co-curricularActivities .activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.co-curricularActivities .activity img {
+  width: 360px;
+  height: 280px;
+  padding-top: 15px;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+.co-curricularActivities .activity h2{
+  font-size: 18px;
+  padding-top: 16px;
+  color: #a622d6;
+  letter-spacing: 4px;
+}
+.co-curricularActivities .activity p::first-letter {
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #2c3e50;
+}
+.co-curricularActivities .activity p{
+  font-size: 14px;
+  line-height: 23px;
+  text-align: justify;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+@media (max-width:460px){
+  .co-curricularActivities .activity img {
+    width: 320px;
+    height: 220px;
+    padding-top: 15px;
+    margin-right: 1px;
+    border-radius: 8px;
+  }
+}
+
+/* ********************************************************
+    Co-curricular activities CSS End
+******************************************************** */
+/* ***************************************************    
+    Transport CSS Start
+***************************************************  */
+.transportImage{
+  position: relative;
+}
+.transportImage img{
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 300px;
+}
+.transport-section {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background: radial-gradient(circle, #4facfe, #00f2fe); */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.transport-container {
+  max-width: 900px;
+  background: rgba(5, 90, 107, 0.6);
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.transport-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.transport-container p{
+  margin-bottom: 35px;
+}
+.transport-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.transport-list {
+  text-align: left;
+  padding-left: 20px;
+}
+.transport-list li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+@media (max-width:460px){
+  .transportImage img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 100px;
+  }
+
+  .transport-section {
+    height: auto; 
+    padding: 20px; 
+    display: block; 
+  }
+  .transport-container {
+    padding: 40px; 
+  }
+
+  .transport-title {
+    font-size: 24px; 
+  }
+
+  .transport-text,
+  .transport-list li {
+    font-size: 16px; 
+  }
+}
+
+/* ***************************************************    
+    Transport CSS End
+***************************************************  */
+
 /* ***************************************************    
     Footer Upper Part CSS Start
 ***************************************************  */

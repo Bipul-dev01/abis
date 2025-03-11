@@ -986,8 +986,16 @@ footer .wave#wave4{
     color: transparent;
     background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
     -webkit-background-clip: text;
-    animation: animateText 20s linear infinite;
-    
+    animation: animateText 20s linear infinite;  
+}
+.schoolName h1{
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: red;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 70px;
 }
 @keyframes animateText {
     0% {
@@ -1015,6 +1023,14 @@ footer .wave#wave4{
         letter-spacing: 10px;
         padding-left: 20px;
         background-size: 300%;
+    }
+    .schoolName h1{
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding-top: 40px;
+        line-height: 40px;
+        
     }
 }
 /* ********************************************************
