@@ -798,8 +798,8 @@ footer .wave#wave4{
     height: 100%; */
     /* overflow: hidden; */
     background: linear-gradient(99deg, rgb(27, 1, 14) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 .wrapperMessage h3{
     font-family: poppins;
