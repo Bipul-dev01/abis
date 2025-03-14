@@ -114,6 +114,9 @@ section{
     .home .content h3{
       font-size: 4rem;
     }
+    .home .image{
+      padding-bottom: 40px;
+    }
   }
   
 /* ********************************************************
@@ -905,9 +908,10 @@ text-shadow: 1px 1px #000;
 .whyStudyAt h1{
   font-size: 40px;
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
-  color: #333;
+  /* color: #333; */
+  color: #a622d6;
 }
 .whyStudyAt .content h2{
   font-size: 18px;
