@@ -858,7 +858,8 @@ text-shadow: 1px 1px #000;
 }
 
 .container-objectives h2 {
-  color: #000; /* Black color for headings */
+  color: #1f1f1b;
+  /* color: #000;  */
   font-size: 25px;
   padding-top: 35px;
 }
@@ -932,13 +933,16 @@ text-shadow: 1px 1px #000;
 }
 .whyStudyAt .section:nth-of-type(1) .content,
 .whyStudyAt .section:nth-of-type(3) .content,
-.whyStudyAt .section:nth-of-type(5) .content{
+.whyStudyAt .section:nth-of-type(5) .content,
+.whyStudyAt .section:nth-of-type(7) .content,
+.whyStudyAt .section:nth-of-type(9) .content{
    padding-left: 60px;
    text-align: justify;
 }
 .whyStudyAt .section:nth-of-type(2) .content,
 .whyStudyAt .section:nth-of-type(4) .content,
-.whyStudyAt .section:nth-of-type(6) .content{
+.whyStudyAt .section:nth-of-type(6) .content,
+.whyStudyAt .section:nth-of-type(8) .content{
    padding-right: 60px;
    text-align: justify;
 }
@@ -969,6 +973,7 @@ text-shadow: 1px 1px #000;
   .whyStudyAt .section img {
     width: 100%;
     border-radius: 10px;
+    padding-top: 10px;
   }
   .whyStudyAt .section .content {
     width: 100%;
@@ -976,12 +981,15 @@ text-shadow: 1px 1px #000;
   }
   .whyStudyAt .section:nth-of-type(1) .content,
   .whyStudyAt .section:nth-of-type(3) .content,
-  .whyStudyAt .section:nth-of-type(5) .content{
+  .whyStudyAt .section:nth-of-type(5) .content,
+  .whyStudyAt .section:nth-of-type(7) .content,
+  .whyStudyAt .section:nth-of-type(9) .content{
     padding-left: 0px;
   }
   .whyStudyAt .section:nth-of-type(2) .content,
   .whyStudyAt .section:nth-of-type(4) .content,
-  .whyStudyAt .section:nth-of-type(6) .content{
+  .whyStudyAt .section:nth-of-type(6) .content,
+  .whyStudyAt .section:nth-of-type(8) .content{
     padding-right: 0px;
   }
   .whyStudyAt .section:nth-of-type(1) img,
@@ -989,7 +997,9 @@ text-shadow: 1px 1px #000;
   .whyStudyAt .section:nth-of-type(3) img,
   .whyStudyAt .section:nth-of-type(4) img,
   .whyStudyAt .section:nth-of-type(5) img,
-  .whyStudyAt .section:nth-of-type(6) img {
+  .whyStudyAt .section:nth-of-type(6) img,
+  .whyStudyAt .section:nth-of-type(7) img,
+  .whyStudyAt .section:nth-of-type(8) img {
     order: 1;
   }
 }
