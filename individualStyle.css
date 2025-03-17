@@ -186,11 +186,12 @@ section{
   margin-bottom: 10px;
 }
 .headingText h2{
-font-size: 20px;
-font-weight: 400;
-color: rgb(20, 19, 20);
+font-size: 25px;
+font-weight: 600;
+color: #f39006;
+/* color: rgb(20, 19, 20); */
 text-align: center;
-text-shadow: 1px 1px #000;
+/* text-shadow: 1px 1px #000; */
 }
 .portfolioImageSlider{
   min-height: 100vh;
@@ -293,8 +294,9 @@ text-shadow: 1px 1px #000;
     margin-bottom: 30px;
 }
 .headingText h2{
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f39006;
   margin-bottom: 40px;
 }
 /* Home Section Our Portfolio Image Slider */
@@ -435,7 +437,7 @@ text-shadow: 1px 1px #000;
 }
 @media(max-width:460px){
   .listFeature{
-      min-height: 120vh;
+      min-height: 110vh;
       background-attachment: scroll; /* Prevents vibration issue */
       background-position: center center; /* Keeps it centered */
   }
