@@ -585,12 +585,17 @@ text-shadow: 1px 1px #000;
     /* Home Section Moving Text */
   .moving{
     min-height: 10vh;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
   }
   .moving-text{
     overflow-x: auto;
     white-space: nowrap;
+  }
+  .moving-text h1{
+    font-size: 4vw;
+    color: rgb(53, 127, 53);
+    padding-top: 35PX;
   }
   .con{
     animation-duration: 20s;
@@ -838,7 +843,7 @@ text-shadow: 1px 1px #000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
-  background: url("/images/common/flowerBack.webp");
+  background: url("/images/common/flowerBackFinal.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -886,7 +891,7 @@ text-shadow: 1px 1px #000;
 @media (max-width:460px){
   .container-objectives{
     padding: 30px;
-    background: url("/images/common/flowerBack.webp");
+    background: url("/images/common/flowerBackFinal.png");
   }
 }
 
