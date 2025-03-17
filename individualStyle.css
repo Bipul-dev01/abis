@@ -888,10 +888,18 @@ text-shadow: 1px 1px #000;
   color: #000; /* Black color for list items */
   z-index: 100;
 }
-@media (max-width:460px){
+/* @media (max-width:460px){
   .container-objectives{
     padding: 30px;
     background: url("/images/common/flowerBackFinal.png");
+  }
+} */
+
+@media (max-width: 460px) {
+  .container-objectives {
+    padding: 30px;
+    background: url("/images/common/flowerBackFinal.png") no-repeat center center;
+    background-size: cover; /* Ensures the image covers the container */
   }
 }
 
