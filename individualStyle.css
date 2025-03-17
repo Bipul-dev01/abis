@@ -109,6 +109,7 @@ section{
   }
   @media (max-width:460px){
     .home{
+      margin-top: -30px;
       margin-bottom: -2px;
     }
     .home .content h3{
@@ -434,7 +435,7 @@ text-shadow: 1px 1px #000;
 }
 @media(max-width:460px){
   .listFeature{
-      min-height: 95vh;
+      min-height: 120vh;
       background-attachment: scroll; /* Prevents vibration issue */
       background-position: center center; /* Keeps it centered */
   }
