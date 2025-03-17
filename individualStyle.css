@@ -899,7 +899,8 @@ text-shadow: 1px 1px #000;
   .container-objectives {
     padding: 30px;
     background: url("/images/common/flowerBackFinal.png") no-repeat center center;
-    background-size: cover; /* Ensures the image covers the container */
+    background-size: cover !important; /* Forces the image to scale properly */
+    display: block !important; 
     min-height: 400px;
     background-attachment: fixed;
   }
