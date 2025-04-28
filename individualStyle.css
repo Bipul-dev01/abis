@@ -1418,3 +1418,84 @@ text-align: center;
 /* **********************************************************
     Contact Us Page Map CSS End
 ********************************************************** */
+
+/* **********************************************************
+    Form Contact Us Page CSS Start
+********************************************************** */
+.contact-section {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 3rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4b7bec;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 14px;
+  background-color: #4b7bec;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3867d6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
+/* **********************************************************
+    Form Contact Us Page CSS End
+********************************************************** */
