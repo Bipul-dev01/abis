@@ -435,6 +435,14 @@ text-align: center;
   transition: 0s;
   background:rgba(0, 0, 0, 1);
 }
+@media (max-width: 768px) {
+    .listFeature li.wow {
+        visibility: visible !important;
+        animation: none !important;
+    }
+}
+
+
 @media(max-width:460px){
   .listFeature{
       min-height: 110vh;
