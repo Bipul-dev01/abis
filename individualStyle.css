@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+/* Google Fonts import for Poppins and Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
   font-family: 'Poppins', sans-serif;
@@ -41,6 +42,7 @@ section{
     color: #fff;
   }
   .heading{
+    font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     color: #1d1c1c;
     text-align: center;
@@ -174,8 +176,9 @@ section{
     Our Portfolio Image Slider Styling Start
 ********************************************************* */
 .headingText h1{
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 2px;
   color: rgb(174, 13, 171);
   text-transform: uppercase;
@@ -186,12 +189,11 @@ section{
   margin-bottom: 10px;
 }
 .headingText h2{
-font-size: 25px;
-font-weight: 600;
-color: #f39006;
-/* color: rgb(20, 19, 20); */
-text-align: center;
-/* text-shadow: 1px 1px #000; */
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #f39006;
+  text-align: center;
 }
 .portfolioImageSlider{
   min-height: 100vh;
@@ -288,14 +290,14 @@ text-align: center;
 }
 @media screen and (max-width: 480px){
   .headingText h1{
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 30px;
 }
 .headingText h2{
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #f39006;
   margin-bottom: 40px;
 }
@@ -733,6 +735,7 @@ text-align: center;
 /* ===== RESPONSIVE DESIGN FOR MOBILE ===== */
 @media (max-width: 460px) {
   .moving {
+    margin-top: 6px;
     padding: 6px 0; /* 🔹 উপরে-নিচে ফাঁকা কমানো হয়েছে */
   }
 
