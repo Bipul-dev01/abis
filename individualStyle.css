@@ -673,80 +673,87 @@ text-align: center;
 /* **********************************************************
     Moving Text Styling Start
 ********************************************************** */
-.moving{
-  min-height: 20vh;
-  margin-top: 10px;
+/* ===== MOVING TEXT SECTION START ===== */
+.moving {
   width: 100%;
   background-color: #EFEAE3;
+  overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  align-items: center; /* 🔹 vertically center করবে */
+  justify-content: flex-start;
+  padding: 10px 0; /* 🔹 proper vertical spacing */
 }
-.moving-text{
+
+.moving-text {
+  display: flex;
+  white-space: nowrap;
   overflow-x: auto;
-  white-space: nowrap;
 }
-.moving-text::-webkit-scrollbar{
+
+.moving-text::-webkit-scrollbar {
   display: none;
 }
-.con{
+
+.con {
+  display: inline-block;
   white-space: nowrap;
-  display: inline-block;
-  animation-name: move;
-  animation-duration: 35s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  padding: 15px 0px;
+  animation: move 35s linear infinite;
 }
-.moving-text h1{
-  font-size: 5vw;
+
+.moving-text h1 {
+  font-size: 4vw;
   color: rgb(53, 127, 53);
-  padding-top: 15PX;
   display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 1; /* 🔹 proper vertical alignment */
 }
-#gola{
-  height: 30px;
-  width: 30px;
+
+#gola {
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background: #FE320A;
-  margin: .5vw 1.5vw;
   display: inline-block;
+  margin: 0 1.2vw;
 }
-@keyframes move{
-  from{
+
+@keyframes move {
+  from {
     transform: translateX(0);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
 
-@media(max-width:460px){
-    /* Home Section Moving Text */
-  .moving{
-    min-height: 10vh;
-    margin-top: -40px;
-    width: 100%;
+/* ===== RESPONSIVE DESIGN FOR MOBILE ===== */
+@media (max-width: 460px) {
+  .moving {
+    padding: 6px 0; /* 🔹 উপরে-নিচে ফাঁকা কমানো হয়েছে */
   }
-  .moving-text{
-    overflow-x: auto;
-    white-space: nowrap;
+
+  .con {
+    animation-duration: 22s;
   }
-  .moving-text h1{
-    font-size: 4vw;
-    color: rgb(53, 127, 53);
-    padding-top: 35PX;
-  }
-  .con{
-    animation-duration: 20s;
-  }
-  .moving-text h1{
+
+  .moving-text h1 {
     font-size: 5vw;
-    padding-top: 10PX;
+    padding: 0 6px;
   }
-  #gola{
-    height: 15px;
-    width: 15px;
+
+  #gola {
+    height: 14px;
+    width: 14px;
     margin: 0 1vw;
   }
 }
+/* ===== MOVING TEXT SECTION END ===== */
+
+
+
 /* **********************************************************
     Moving Text Styling End
 ********************************************************** */
