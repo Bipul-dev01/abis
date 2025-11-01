@@ -18,148 +18,69 @@ html{
 ::-webkit-scrollbar-thumb{background-color: green;}
 
 
-/* ***************************************************    
-    Preloader style Start
-***************************************************  */
+/* Preloader */
 #loading{
     height: 100%;
     width: 100%;
+    background-color: #000;
     position: fixed;
-    background-image: url("images/common/cartoon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    overflow: hidden;
-    z-index: 2000;
-}
-
-#loading::before {
-    content: "";
-    position: absolute;
+    z-index: 99999999999999999;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
-    pointer-events: none; /* Ensures the overlay doesn’t interfere with interactions */
-    z-index: 1;
-}
-
-#loading ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensures the text appears above the overlay */
-}
-
-#loading .schoolName{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 110px;
+    align-items: center; 
 }
-#loading .schoolName h2{
-    font-family: arial;
-    color: #fff;
-    /* color: #f3eb06; */
-    font-weight: bold;
-    text-shadow: 2px 2px 5px #0b0eb9;
-    font-size: 6em;
+.loading-text{
+  color: #fff;
+  font-size: 12px;
 }
-
-#loading ul li{
-    list-style: none;
-    float: left;
-    font-family: arial;
-    font-size: 5em;
-    color: #e9768f;
-    text-shadow: 5px 5px 10px #fff;
-    font-weight: bold;
-    transform-origin: left;
-    animation: animateLoading 3s infinite ease-in-out; /* Added easing for smoother transitions */
+.ring{
+  height: 200px;
+  width: 200px;
+  border: 0px solid black;
+  border-radius: 50%;
+  position: absolute;
 }
-@keyframes animateLoading{
-    0%
-    {
-        opacity : 0;
-        transform: rotateY(90deg) translateX(-30px);
-    }
-    50%
-    {
-        opacity : 1;
-        transform: rotateY(0deg) translateX(30px) scale(0.4);
-        /* transform: rotateY(0deg) translateX(0) scale(1);  */
-    }
-    100%
-    {
-        opacity : 0;
-        transform: rotateY(0deg);
-    }
+.ring:nth-child(1){
+  border-bottom-width: 8px;
+  border-color: rgb(255,0,255);
+  animation: rotate1 2s linear infinite;
 }
-#loading ul li:nth-child(1){
-    animation-delay: 0s;
+.ring:nth-child(2){
+  border-right-width: 8px;
+  border-color: rgb(0,247,255);
+  animation: rotate2 2s linear infinite;
 }
-#loading ul li:nth-child(2){
-    animation-delay: .2s;
+.ring:nth-child(3){
+  border-top-width: 8px;
+  border-color: rgb(0,255,13);
+  animation: rotate3 2s linear infinite;
 }
-#loading ul li:nth-child(3){
-    animation-delay: .4s;
+@keyframes rotate1{
+  0%{
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100%{
+       transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
 }
-#loading ul li:nth-child(4){
-    animation-delay: .6s;
+@keyframes rotate2{
+  0%{
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100%{
+       transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
 }
-#loading ul li:nth-child(5){
-    animation-delay: .8s;
-}
-#loading ul li:nth-child(6){
-    animation-delay: 1s;
-}
-#loading ul li:nth-child(7){
-    animation-delay: 1.2s;
+@keyframes rotate3{
+  0%{
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100%{
+       transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
 }
 
-@media(max-width: 460px){
-    #loading{
-        background-image: url("images/common/school.jpeg");
-        background-color: #95dee8;
-        background-size: 100%;
-        /* background-size: cover;
-        background-repeat: no-repeat; */
-        background-position: center;
-        z-index: 2000;
-    }
-    #loading::before {
-        background: rgba(0, 0, 0, 0.0); /* Black overlay with 50% opacity */
-    }
-    
-    #loading ul li{
-        font-size: 2.6em;
-        color: #d22c50;
-        font-weight: 600;
-        text-shadow: 5px 5px 10px #fff;
-        transform-origin: left;
-        animation: animateLoading 3s infinite ease-in-out; /* Added easing for smoother transitions */
-    } 
-    #loading .schoolName{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
-    }
-    #loading .schoolName h2{
-        font-family: arial;
-        color: #0610d7;
-        font-weight: 600;
-        text-shadow: 5px 5px 10px #f9f8f9;
-        font-size: 2.6em;
-        text-align: center;
-    }
-}
-/* ***************************************************    
-    Preloader style End
-***************************************************  */
 
 /* ***************************************************    
     Navbar style Start
