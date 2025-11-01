@@ -793,7 +793,7 @@ footer .wave#wave4{
 /* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 460px) {
     .wrapperMessage {
-        min-height: 130vh;
+        min-height: 140vh;
         margin-top: 40px;
         margin-bottom: 50px;
     }

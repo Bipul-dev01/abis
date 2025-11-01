@@ -181,7 +181,7 @@ section{
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1px;
-  text-shadow: 1px 1px #000;
+  /* text-shadow: 1px 1px #000; */
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -683,6 +683,7 @@ text-align: center;
   align-items: center; /* 🔹 vertically center করবে */
   justify-content: flex-start;
   padding: 10px 0; /* 🔹 proper vertical spacing */
+  margin-top: 12px;
 }
 
 .moving-text {
