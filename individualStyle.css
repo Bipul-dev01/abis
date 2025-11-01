@@ -316,7 +316,7 @@ text-align: center;
 }
 .slider::before,
 .slider::after{
-  height: 80%;
+  height: 70%;
   top: 35px;
 }
 .slider{
@@ -722,7 +722,7 @@ text-align: center;
     /* Home Section Moving Text */
   .moving{
     min-height: 10vh;
-    margin-top: 40px;
+    margin-top: -40px;
     width: 100%;
   }
   .moving-text{
