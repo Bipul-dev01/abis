@@ -1005,7 +1005,8 @@ section{
   text-decoration: none;
   border-radius: 10px 0 0 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  z-index: 9999;
+  z-index: 1000;
+  /* z-index: 9999; */
   writing-mode: vertical-rl; /* Vertical text */
   text-orientation: mixed;
   letter-spacing: 2px;
