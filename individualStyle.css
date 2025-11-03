@@ -762,6 +762,81 @@ section{
     Moving Text Styling End
 ********************************************************** */
 
+/* ===== Admission Details Start ===== */
+
+.admission {
+  background: #f9fafc;
+  padding: 70px 0;
+}
+
+.admission .title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.admission .title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.admission .serve-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.admission .card {
+  width: 260px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admission .card:nth-child(odd) {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.admission .card:nth-child(even) {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.admission .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.admission .box {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.admission .text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.admission p {
+  font-size: 15px;
+  margin: 5px 0;
+  white-space: nowrap; /* Keeps TK on same line */
+}
+
+
+/* ===== Admission Details End ===== */
+
 
 /* **********************************************************
     Playground Backgroud attatchment Start
