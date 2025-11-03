@@ -766,7 +766,8 @@ section{
 
 .admission {
   background: #f9fafc;
-  padding: 70px 0;
+  /* padding: 70px 0; */
+  padding: 120px 0px 60px;
 }
 
 .admission .title {
@@ -834,6 +835,187 @@ section{
   white-space: nowrap; /* Keeps TK on same line */
 }
 
+/* ------------------------------------ */
+
+.admission-info {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 10px 0px 20px ;
+}
+
+.admission-info .max-width {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.info-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0a3d62;
+  position: relative;
+}
+
+.sub-heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+/* 🟡 AGE LIMIT GRID */
+.age-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.age-item {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.age-item span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 🟢 TRANSPORT */
+.transport {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  text-align: center;
+}
+
+.transport p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* 🔵 PROCEDURE GRID */
+.procedure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.procedure-grid .column {
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.procedure-grid p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+  position: relative;
+  padding-left: 15px;
+}
+
+.procedure-grid p::before {
+  content: "•";
+  color: #0072ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* 🟣 WAIVER */
+.waiver {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  text-align: center;
+}
+
+.waiver p {
+  font-size: 17px;
+}
+
+/* 🔴 CONTACT */
+.contact {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 0;
+}
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ffd700; /* golden hover effect */
+}
+
+@media (max-width: 768px) {
+  .admission .card {
+    width: 300px;
+  }
+  .sub-heading {
+    font-size: 20px;
+  }
+  .info-box {
+    padding: 25px 20px;
+  }
+  .procedure-grid {
+    gap: 2px;
+  }
+}
+
+.admission-btn-vertical {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, #F0592A, #FF8C42);
+  color: #fff;
+  padding: 15px 10px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  writing-mode: vertical-rl; /* Vertical text */
+  text-orientation: mixed;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.admission-btn-vertical:hover {
+  background: linear-gradient(180deg, #E34B20, #FF7B29);
+  transform: translateY(-50%) scale(1.05);
+}
 
 /* ===== Admission Details End ===== */
 
